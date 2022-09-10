@@ -30,8 +30,18 @@ extension GermanyViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         germanyTeam.count
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedGermanyViewController") as? DetailedGermanyViewController{
+            let item = germanyTeam[indexPath.row]
+                    vc.item = item
+           // vc.img = UIImage(named: logo.indexPath.row)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
       
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GermanyTableViewCell", for: indexPath) as? GermanyTableViewCell else {return UITableViewCell()}
         
@@ -39,7 +49,7 @@ extension GermanyViewController: UITableViewDelegate, UITableViewDataSource{
         let item = germanyTeam[indexPath.row]
         cell.germanyTeamLbl.text = item.name
       cell.germanyTeamImg.sd_setImage(with: URL(string: item.logo ?? ""))
-        #warning("here2")
+        
         
         
         return cell

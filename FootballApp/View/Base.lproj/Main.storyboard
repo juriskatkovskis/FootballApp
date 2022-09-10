@@ -16,11 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y75-vX-07t">
-                                <rect key="frame" x="59" y="184" width="287" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-lC-ssY">
+                                <rect key="frame" x="220" y="392" width="135" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="England"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a country:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REg-tR-wIz">
+                                <rect key="frame" x="56" y="221" width="278" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y75-vX-07t">
+                                <rect key="frame" x="42" y="392" width="135" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Germany"/>
                                 <connections>
                                     <segue destination="VHx-Lg-YlU" kind="show" id="lAC-li-vcR"/>
                                 </connections>
@@ -69,7 +82,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5c-Qu-XSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="97.767857142857139"/>
+            <point key="canvasLocation" x="2101" y="98"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fiv-R9-QMY">
@@ -105,7 +118,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHm-zr-l3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682.608695652174" y="1023.8839285714286"/>
+            <point key="canvasLocation" x="2100" y="944"/>
         </scene>
         <!--Germany View Controller-->
         <scene sceneID="eZX-S1-cFx">
@@ -180,7 +193,54 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epR-pS-tlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="-699.10714285714278"/>
+            <point key="canvasLocation" x="2100" y="-688"/>
+        </scene>
+        <!--Detailed Germany View Controller-->
+        <scene sceneID="i8v-Lq-ZM2">
+            <objects>
+                <viewController storyboardIdentifier="DetailedGermanyViewController" id="ON6-1N-8lO" customClass="DetailedGermanyViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkT-57-0dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="ypg-aF-DCh">
+                                <rect key="frame" x="69" y="269.5" width="276" height="367"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kym-Qe-R1R">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="cSw-54-hnZ"/>
+                                            <constraint firstAttribute="width" constant="276" id="sr2-sc-L86"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-bg-sxG">
+                                        <rect key="frame" x="0.0" y="283" width="276" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="3VM-ZL-FUH"/>
+                                            <constraint firstAttribute="width" constant="276" id="zd9-Ba-nyh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OoX-Td-W1v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypg-aF-DCh" firstAttribute="centerY" secondItem="OoX-Td-W1v" secondAttribute="centerY" id="5am-Ud-WMW"/>
+                            <constraint firstItem="ypg-aF-DCh" firstAttribute="centerX" secondItem="OoX-Td-W1v" secondAttribute="centerX" id="G7e-To-F4G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailedGermanyImg" destination="kym-Qe-R1R" id="NTy-nL-oUt"/>
+                        <outlet property="detailedGermanyName" destination="ihT-bg-sxG" id="oug-uQ-ygs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiV-lU-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3053.6231884057975" y="-843.08035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j1O-t3-Gmb">
