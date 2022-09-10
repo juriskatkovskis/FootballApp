@@ -9,23 +9,34 @@
 /* Begin PBXBuildFile section */
 		113BE57328CC8F180035FB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE57228CC8F180035FB5E /* AppDelegate.swift */; };
 		113BE57528CC8F180035FB5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE57428CC8F180035FB5E /* SceneDelegate.swift */; };
-		113BE57728CC8F180035FB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE57628CC8F180035FB5E /* ViewController.swift */; };
+		113BE57728CC8F180035FB5E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE57628CC8F180035FB5E /* MainViewController.swift */; };
 		113BE57A28CC8F180035FB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113BE57828CC8F180035FB5E /* Main.storyboard */; };
 		113BE57D28CC8F180035FB5E /* FootballApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 113BE57B28CC8F180035FB5E /* FootballApp.xcdatamodeld */; };
 		113BE57F28CC8F1A0035FB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113BE57E28CC8F1A0035FB5E /* Assets.xcassets */; };
 		113BE58228CC8F1A0035FB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113BE58028CC8F1A0035FB5E /* LaunchScreen.storyboard */; };
+		113BE59128CC96090035FB5E /* GermanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */; };
+		113BE59328CC979F0035FB5E /* GermanyTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59228CC979F0035FB5E /* GermanyTeams.swift */; };
+		113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */; };
+		113BE59828CC9D0C0035FB5E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 113BE59728CC9D0C0035FB5E /* SDWebImage */; };
+		113BE59A28CCA7E10035FB5E /* EnglandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */; };
+		113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		113BE56F28CC8F180035FB5E /* FootballApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113BE57228CC8F180035FB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		113BE57428CC8F180035FB5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		113BE57628CC8F180035FB5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		113BE57628CC8F180035FB5E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		113BE57928CC8F180035FB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		113BE57C28CC8F180035FB5E /* FootballApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballApp.xcdatamodel; sourceTree = "<group>"; };
 		113BE57E28CC8F1A0035FB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113BE58128CC8F1A0035FB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113BE58328CC8F1A0035FB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyTableViewCell.swift; sourceTree = "<group>"; };
+		113BE59228CC979F0035FB5E /* GermanyTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyTeams.swift; sourceTree = "<group>"; };
+		113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyNetworkManager.swift; sourceTree = "<group>"; };
+		113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandTableViewController.swift; sourceTree = "<group>"; };
+		113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113BE59828CC9D0C0035FB5E /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +70,61 @@
 		113BE57128CC8F180035FB5E /* FootballApp */ = {
 			isa = PBXGroup;
 			children = (
-				113BE57228CC8F180035FB5E /* AppDelegate.swift */,
-				113BE57428CC8F180035FB5E /* SceneDelegate.swift */,
-				113BE57628CC8F180035FB5E /* ViewController.swift */,
-				113BE57828CC8F180035FB5E /* Main.storyboard */,
+				113BE58928CC8F2C0035FB5E /* AppDelegate */,
+				113BE58D28CC8F970035FB5E /* Helper */,
+				113BE58C28CC8F7C0035FB5E /* Model */,
+				113BE58A28CC8F340035FB5E /* Controllers */,
+				113BE58B28CC8F430035FB5E /* View */,
 				113BE57E28CC8F1A0035FB5E /* Assets.xcassets */,
-				113BE58028CC8F1A0035FB5E /* LaunchScreen.storyboard */,
 				113BE58328CC8F1A0035FB5E /* Info.plist */,
 				113BE57B28CC8F180035FB5E /* FootballApp.xcdatamodeld */,
 			);
 			path = FootballApp;
+			sourceTree = "<group>";
+		};
+		113BE58928CC8F2C0035FB5E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				113BE57228CC8F180035FB5E /* AppDelegate.swift */,
+				113BE57428CC8F180035FB5E /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		113BE58A28CC8F340035FB5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				113BE57628CC8F180035FB5E /* MainViewController.swift */,
+				113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */,
+				113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */,
+				113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		113BE58B28CC8F430035FB5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				113BE57828CC8F180035FB5E /* Main.storyboard */,
+				113BE58028CC8F1A0035FB5E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		113BE58C28CC8F7C0035FB5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				113BE59228CC979F0035FB5E /* GermanyTeams.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		113BE58D28CC8F970035FB5E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +143,9 @@
 			dependencies = (
 			);
 			name = FootballApp;
+			packageProductDependencies = (
+				113BE59728CC9D0C0035FB5E /* SDWebImage */,
+			);
 			productName = FootballApp;
 			productReference = 113BE56F28CC8F180035FB5E /* FootballApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 113BE56628CC8F180035FB5E;
+			packageReferences = (
+				113BE59628CC9D0C0035FB5E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 113BE57028CC8F180035FB5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113BE59328CC979F0035FB5E /* GermanyTeams.swift in Sources */,
 				113BE57D28CC8F180035FB5E /* FootballApp.xcdatamodeld in Sources */,
-				113BE57728CC8F180035FB5E /* ViewController.swift in Sources */,
+				113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */,
+				113BE59128CC96090035FB5E /* GermanyTableViewCell.swift in Sources */,
+				113BE57728CC8F180035FB5E /* MainViewController.swift in Sources */,
 				113BE57328CC8F180035FB5E /* AppDelegate.swift in Sources */,
+				113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */,
+				113BE59A28CCA7E10035FB5E /* EnglandTableViewController.swift in Sources */,
 				113BE57528CC8F180035FB5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		113BE59628CC9D0C0035FB5E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		113BE59728CC9D0C0035FB5E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 113BE59628CC9D0C0035FB5E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		113BE57B28CC8F180035FB5E /* FootballApp.xcdatamodeld */ = {
