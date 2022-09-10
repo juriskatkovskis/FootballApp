@@ -12,6 +12,7 @@ class DetailedGermanyViewController: UIViewController {
     @IBOutlet weak var detailedGermanyImg: UIImageView!
     @IBOutlet weak var detailedGermanyName: UILabel!
    
+    @IBOutlet weak var detailsShareButton: UIButton!
     
     var item: Datum?
     
@@ -24,7 +25,10 @@ class DetailedGermanyViewController: UIViewController {
                 detailedGermanyImg.sd_setImage(with: URL(string: item?.logo ?? ""))
        
     }
-    
+    @IBAction func shareButtonPressed(_ sender: Any) {
+            let activityVc = UIActivityViewController(activityItems: ["Share this team"], applicationActivities: nil)
+            activityVc.popoverPresentationController?.sourceView = self.view
+            self.present(activityVc, animated: true, completion: nil)
 
     /*
     // MARK: - Navigation
@@ -36,4 +40,5 @@ class DetailedGermanyViewController: UIViewController {
     }
     */
 
+}
 }

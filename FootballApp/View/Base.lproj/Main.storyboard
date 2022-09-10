@@ -225,17 +225,34 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-Md-2ed">
+                                <rect key="frame" x="115" y="751" width="192" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="4j0-Gz-oBR"/>
+                                    <constraint firstAttribute="height" constant="65" id="CmN-Wr-yzg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="ON6-1N-8lO" eventType="touchUpInside" id="jXf-L0-gtb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OoX-Td-W1v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ypg-aF-DCh" firstAttribute="centerY" secondItem="OoX-Td-W1v" secondAttribute="centerY" id="5am-Ud-WMW"/>
                             <constraint firstItem="ypg-aF-DCh" firstAttribute="centerX" secondItem="OoX-Td-W1v" secondAttribute="centerX" id="G7e-To-F4G"/>
+                            <constraint firstItem="Nhk-Md-2ed" firstAttribute="top" secondItem="ypg-aF-DCh" secondAttribute="bottom" constant="114.5" id="PkF-tf-RgD"/>
+                            <constraint firstItem="Nhk-Md-2ed" firstAttribute="leading" secondItem="OoX-Td-W1v" secondAttribute="leading" constant="115" id="bxj-kS-NoO"/>
+                            <constraint firstItem="OoX-Td-W1v" firstAttribute="bottom" secondItem="Nhk-Md-2ed" secondAttribute="bottom" constant="46" id="lYi-9h-q4J"/>
+                            <constraint firstItem="OoX-Td-W1v" firstAttribute="trailing" secondItem="Nhk-Md-2ed" secondAttribute="trailing" constant="107" id="wle-2r-Mu0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="detailedGermanyImg" destination="kym-Qe-R1R" id="NTy-nL-oUt"/>
                         <outlet property="detailedGermanyName" destination="ihT-bg-sxG" id="oug-uQ-ygs"/>
+                        <outlet property="detailsShareButton" destination="Nhk-Md-2ed" id="5pt-b9-5rT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiV-lU-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
