@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="England"/>
                                 <connections>
-                                    <segue destination="CB1-E7-kd1" kind="show" id="4Jb-cy-ebt"/>
+                                    <segue destination="L4U-kn-gE8" kind="show" id="35z-Fk-dDZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a country:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REg-tR-wIz">
@@ -38,7 +38,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Germany"/>
                                 <connections>
-                                    <segue destination="VHx-Lg-YlU" kind="show" id="lAC-li-vcR"/>
+                                    <segue destination="und-ha-e1B" kind="show" id="ocI-ZN-W52"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,18 +49,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+            <point key="canvasLocation" x="803" y="256"/>
         </scene>
-        <!--England View Controller-->
+        <!--Teams-->
         <scene sceneID="kqy-WJ-Sl8">
             <objects>
-                <viewController id="CB1-E7-kd1" customClass="EnglandViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="CB1-E7-kd1" customClass="EnglandViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d2R-GM-hgO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="39u-lp-ieC">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnglandTableViewCell" rowHeight="148" id="dcq-5a-8J3" customClass="EnglandTableViewCell" customModule="FootballApp" customModuleProvider="target">
@@ -121,6 +121,7 @@
                             <constraint firstItem="y9z-O3-PY1" firstAttribute="trailing" secondItem="39u-lp-ieC" secondAttribute="trailing" id="rId-RD-fYp"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Teams" id="zqE-Cm-cBv"/>
                     <navigationItem key="navigationItem" id="8KG-24-3Xh"/>
                     <connections>
                         <outlet property="englandTableView" destination="39u-lp-ieC" id="PVs-fa-19O"/>
@@ -128,9 +129,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTu-OO-CNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="110"/>
+            <point key="canvasLocation" x="3383" y="256"/>
         </scene>
-        <!--Germany View Controller-->
+        <!--Teams-->
         <scene sceneID="eZX-S1-cFx">
             <objects>
                 <tableViewController id="VHx-Lg-YlU" customClass="GermanyViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -195,6 +196,7 @@
                             <outlet property="delegate" destination="VHx-Lg-YlU" id="gTa-jw-auK"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Teams" id="vGQ-tl-C8W"/>
                     <navigationItem key="navigationItem" id="p7X-bw-hrR"/>
                     <connections>
                         <outlet property="GermanyTableView" destination="rBB-sk-MbP" id="XBx-a9-f3b"/>
@@ -203,7 +205,100 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epR-pS-tlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="-688"/>
+            <point key="canvasLocation" x="3383" y="-466"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="i5u-c7-JXj">
+            <objects>
+                <viewController id="aim-6b-SH2" customClass="GermanyPlayersViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o4p-P7-JOl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-3R-FoF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GermanyPlayersTableViewCell" rowHeight="103" id="KJv-Fc-Ljk" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KJv-Fc-Ljk" id="254-yL-DUi" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8lm-cZ-9qV">
+                                                    <rect key="frame" x="20" y="34" width="360" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOj-iN-bdQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="137" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="VtF-Rq-yey"/>
+                                                                <constraint firstAttribute="width" constant="137" id="a78-ta-1gG"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCt-1s-Uaf">
+                                                            <rect key="frame" x="145" y="0.0" width="130" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="2uG-OM-Knd"/>
+                                                                <constraint firstAttribute="width" constant="150" id="Z1F-RA-HXB"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJi-RL-x4o">
+                                                            <rect key="frame" x="283" y="0.0" width="77" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="DH8-1O-k9h"/>
+                                                                <constraint firstAttribute="width" constant="77" id="yhr-yc-Jhz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8lm-cZ-9qV" secondAttribute="trailing" constant="14" id="ET3-Xo-byv"/>
+                                                <constraint firstItem="8lm-cZ-9qV" firstAttribute="top" secondItem="254-yL-DUi" secondAttribute="topMargin" constant="23" id="Vss-Zh-LG0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8lm-cZ-9qV" secondAttribute="bottom" constant="25" id="f0n-NW-2CW"/>
+                                                <constraint firstItem="8lm-cZ-9qV" firstAttribute="leading" secondItem="254-yL-DUi" secondAttribute="leadingMargin" id="kRI-O9-kG7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="germanyPlayersAge" destination="qJi-RL-x4o" id="73p-GH-nq0"/>
+                                            <outlet property="germanyPlayersLastLbl" destination="fCt-1s-Uaf" id="rsP-SB-noQ"/>
+                                            <outlet property="germanyPlayersLbl" destination="aOj-iN-bdQ" id="P4C-0J-Eox"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aim-6b-SH2" id="nG8-aV-90y"/>
+                                    <outlet property="delegate" destination="aim-6b-SH2" id="qdH-Rn-vfP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jXy-aS-azz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jXy-aS-azz" firstAttribute="trailing" secondItem="tbv-3R-FoF" secondAttribute="trailing" id="0et-r5-poi"/>
+                            <constraint firstItem="tbv-3R-FoF" firstAttribute="leading" secondItem="jXy-aS-azz" secondAttribute="leading" id="564-T1-Rj6"/>
+                            <constraint firstItem="jXy-aS-azz" firstAttribute="bottom" secondItem="tbv-3R-FoF" secondAttribute="bottom" id="JRP-na-aAK"/>
+                            <constraint firstItem="tbv-3R-FoF" firstAttribute="top" secondItem="jXy-aS-azz" secondAttribute="top" id="f7v-FM-MDM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Players" id="Yxu-U5-XmR"/>
+                    <connections>
+                        <outlet property="germanyPlayersTableView" destination="tbv-3R-FoF" id="fs1-gv-HQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fra-5c-Zz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383" y="-1282"/>
         </scene>
         <!--Detailed England View Controller-->
         <scene sceneID="i8v-Lq-ZM2">
@@ -267,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiV-lU-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3090" y="110"/>
+            <point key="canvasLocation" x="4475" y="256"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j1O-t3-Gmb">
@@ -285,7 +380,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5d-Y3-Z9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-374" y="214"/>
         </scene>
         <!--Detailed Germany View Controller-->
         <scene sceneID="rPw-zT-GFE">
@@ -349,7 +444,138 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62H-pc-IOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3091" y="-688"/>
+            <point key="canvasLocation" x="4474" y="-466"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RC7-gB-0Ld">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="und-ha-e1B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ble-Cp-myw"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MMy-3M-1nW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VHx-Lg-YlU" kind="relationship" relationship="viewControllers" id="2ZC-CF-HMy"/>
+                        <segue destination="aim-6b-SH2" kind="relationship" relationship="viewControllers" id="fZo-rx-guM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4I-nK-nnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="-623"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="xZB-gk-HsC">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="nze-lo-KOx" customClass="EnglandPlayersViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcP-sf-IJw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-BK-nWT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnglandPlayersTableViewCell" rowHeight="103" id="QXl-9C-2BN" customClass="EnglandPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QXl-9C-2BN" id="pWX-6N-icK" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K1N-3S-pc4">
+                                                    <rect key="frame" x="20" y="34" width="360" height="33"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu2-li-6DB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="137" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="137" id="CJh-Ky-0Ez"/>
+                                                                <constraint firstAttribute="height" constant="55" id="Twj-Pa-af2"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2K-Iv-SX3">
+                                                            <rect key="frame" x="145" y="0.0" width="130" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="a3Z-hj-Qj9"/>
+                                                                <constraint firstAttribute="height" constant="55" id="e5i-zx-aOk"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaW-P4-yGy">
+                                                            <rect key="frame" x="283" y="0.0" width="77" height="33"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="77" id="6m7-dY-WRi"/>
+                                                                <constraint firstAttribute="height" constant="55" id="ENE-xM-7h3"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="K1N-3S-pc4" firstAttribute="leading" secondItem="pWX-6N-icK" secondAttribute="leadingMargin" id="Mwu-Ue-b7b"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="K1N-3S-pc4" secondAttribute="trailing" constant="14" id="c5v-No-eaG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="K1N-3S-pc4" secondAttribute="bottom" constant="25" id="iHA-v4-SdE"/>
+                                                <constraint firstItem="K1N-3S-pc4" firstAttribute="top" secondItem="pWX-6N-icK" secondAttribute="topMargin" constant="23" id="sOD-ay-squ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="englandPlayersAge" destination="YaW-P4-yGy" id="prH-Br-nep"/>
+                                            <outlet property="englandPlayersLastLbl" destination="I2K-Iv-SX3" id="aAw-06-IoC"/>
+                                            <outlet property="englandPlayersLbl" destination="xu2-li-6DB" id="thV-lY-C7j"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nze-lo-KOx" id="2tr-I3-Cjk"/>
+                                    <outlet property="delegate" destination="nze-lo-KOx" id="O7Q-rm-c7O"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rbd-jn-reh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rbd-jn-reh" firstAttribute="bottom" secondItem="IXd-BK-nWT" secondAttribute="bottom" id="14c-jK-ZIs"/>
+                            <constraint firstItem="IXd-BK-nWT" firstAttribute="leading" secondItem="rbd-jn-reh" secondAttribute="leading" id="BeH-qp-8dM"/>
+                            <constraint firstItem="rbd-jn-reh" firstAttribute="trailing" secondItem="IXd-BK-nWT" secondAttribute="trailing" id="VQB-g1-3Db"/>
+                            <constraint firstItem="IXd-BK-nWT" firstAttribute="top" secondItem="rbd-jn-reh" secondAttribute="top" id="xlg-RF-lPJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Players" id="frz-Pr-31C"/>
+                    <connections>
+                        <outlet property="englandPlayersTableView" destination="IXd-BK-nWT" id="epn-fp-ymd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iH1-XX-MJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383" y="1357"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JBn-di-uMG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L4U-kn-gE8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="kmh-Mp-EBR"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N4p-gm-HTf">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CB1-E7-kd1" kind="relationship" relationship="viewControllers" id="WE6-Af-5YO"/>
+                        <segue destination="nze-lo-KOx" kind="relationship" relationship="viewControllers" id="ZeM-RH-aJl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-AT-vbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="829"/>
         </scene>
     </scenes>
     <resources>

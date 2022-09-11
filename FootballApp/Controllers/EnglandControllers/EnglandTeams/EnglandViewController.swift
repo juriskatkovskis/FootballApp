@@ -34,7 +34,6 @@ extension EnglandViewController: UITableViewDelegate, UITableViewDataSource{
         if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedEnglandViewController") as? DetailedEnglandViewController{
             let item = Teams[indexPath.row]
                     vc.englandItem = item
-           // vc.img = UIImage(named: logo.indexPath.row)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

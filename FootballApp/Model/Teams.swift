@@ -17,17 +17,21 @@ import Foundation
 
 // MARK: - Teams
 struct Teams: Codable {
-    let query: Query?
-    let data: [Datum]?
+    var query: Query?
+    var data: [Datum]?
 }
 
 // MARK: - Datum
 struct Datum: Codable {
-    let teamID: Int?
-    let name, shortCode: String?
-    let commonName: String?
-    let logo: String?
-    let country: Country?
+    var teamID: Int?
+    var name, shortCode: String?
+    var commonName: String?
+    var logo: String?
+    var country: Country?
+    var playerID: Int?
+        var firstname, lastname: String?
+        var birthday: String?
+        var age, weight, height: Int?
 
     enum CodingKeys: String, CodingKey {
         case teamID = "team_id"
@@ -35,15 +39,17 @@ struct Datum: Codable {
         case shortCode = "short_code"
         case commonName = "common_name"
         case logo, country
+        case playerID = "player_id"
+        case firstname, lastname, birthday, age, weight, height
     }
 }
 
 // MARK: - Country
 struct Country: Codable {
-    let countryID: Int?
-    let name: Name?
-    let countryCode: CountryCode?
-    let continent: Continent?
+    var countryID: Int?
+    var name: Name?
+    var countryCode: CountryCode?
+    var continent: Continent?
 
     enum CodingKeys: String, CodingKey {
         case countryID = "country_id"
@@ -69,7 +75,7 @@ enum Name: String, Codable {
 
 // MARK: - Query
 struct Query: Codable {
-    let apikey, countryID: String?
+    var apikey, countryID: String?
 
     enum CodingKeys: String, CodingKey {
         case apikey

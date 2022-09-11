@@ -24,6 +24,12 @@
 		11DFBD5928CDF97B001EAAEE /* EnglandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */; };
 		11DFBD5B28CDFAD9001EAAEE /* EnglandNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */; };
 		11DFBD5D28CDFE3D001EAAEE /* DetailedEnglandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */; };
+		11E391E628CE39D800E8395B /* GermanyPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391E528CE39D800E8395B /* GermanyPlayersViewController.swift */; };
+		11E391E828CE39F200E8395B /* GermanyPlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391E728CE39F200E8395B /* GermanyPlayersTableViewCell.swift */; };
+		11E391EA28CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391E928CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift */; };
+		11E391EE28CE53D700E8395B /* EnglandPlayersNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391ED28CE53D700E8395B /* EnglandPlayersNetworkManager.swift */; };
+		11E391F428CE547E00E8395B /* EnglandPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391F328CE547E00E8395B /* EnglandPlayersViewController.swift */; };
+		11E391F628CE549C00E8395B /* EnglandPlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E391F528CE549C00E8395B /* EnglandPlayersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,12 @@
 		11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandTableViewCell.swift; sourceTree = "<group>"; };
 		11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandNetworkManager.swift; sourceTree = "<group>"; };
 		11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedEnglandViewController.swift; sourceTree = "<group>"; };
+		11E391E528CE39D800E8395B /* GermanyPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyPlayersViewController.swift; sourceTree = "<group>"; };
+		11E391E728CE39F200E8395B /* GermanyPlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyPlayersTableViewCell.swift; sourceTree = "<group>"; };
+		11E391E928CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyPlayersNetworkManager.swift; sourceTree = "<group>"; };
+		11E391ED28CE53D700E8395B /* EnglandPlayersNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandPlayersNetworkManager.swift; sourceTree = "<group>"; };
+		11E391F328CE547E00E8395B /* EnglandPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandPlayersViewController.swift; sourceTree = "<group>"; };
+		11E391F528CE549C00E8395B /* EnglandPlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandPlayersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +143,8 @@
 			children = (
 				113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */,
 				11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */,
+				11E391E928CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift */,
+				11E391ED28CE53D700E8395B /* EnglandPlayersNetworkManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -138,9 +152,8 @@
 		11DFBD5228CD2CA4001EAAEE /* GermanyControllers */ = {
 			isa = PBXGroup;
 			children = (
-				113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */,
-				113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */,
-				11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */,
+				11E391EF28CE540E00E8395B /* GermanyTeams */,
+				11E391F028CE541B00E8395B /* GermanyPlayers */,
 			);
 			path = GermanyControllers;
 			sourceTree = "<group>";
@@ -148,11 +161,48 @@
 		11DFBD5528CDF81D001EAAEE /* EnglandControllers */ = {
 			isa = PBXGroup;
 			children = (
+				11E391F228CE543300E8395B /* EnglandPlayers */,
+				11E391F128CE542900E8395B /* EnglandTeams */,
+			);
+			path = EnglandControllers;
+			sourceTree = "<group>";
+		};
+		11E391EF28CE540E00E8395B /* GermanyTeams */ = {
+			isa = PBXGroup;
+			children = (
+				113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */,
+				113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */,
+				11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */,
+			);
+			path = GermanyTeams;
+			sourceTree = "<group>";
+		};
+		11E391F028CE541B00E8395B /* GermanyPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				11E391E528CE39D800E8395B /* GermanyPlayersViewController.swift */,
+				11E391E728CE39F200E8395B /* GermanyPlayersTableViewCell.swift */,
+			);
+			path = GermanyPlayers;
+			sourceTree = "<group>";
+		};
+		11E391F128CE542900E8395B /* EnglandTeams */ = {
+			isa = PBXGroup;
+			children = (
 				11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */,
 				11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */,
 				11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */,
 			);
-			path = EnglandControllers;
+			path = EnglandTeams;
+			sourceTree = "<group>";
+		};
+		11E391F228CE543300E8395B /* EnglandPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				11E391F328CE547E00E8395B /* EnglandPlayersViewController.swift */,
+				11E391F528CE549C00E8395B /* EnglandPlayersTableViewCell.swift */,
+			);
+			path = EnglandPlayers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,15 +286,21 @@
 				113BE57D28CC8F180035FB5E /* FootballApp.xcdatamodeld in Sources */,
 				113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */,
 				113BE59128CC96090035FB5E /* GermanyTableViewCell.swift in Sources */,
+				11E391EE28CE53D700E8395B /* EnglandPlayersNetworkManager.swift in Sources */,
+				11E391F428CE547E00E8395B /* EnglandPlayersViewController.swift in Sources */,
 				11DFBD5B28CDFAD9001EAAEE /* EnglandNetworkManager.swift in Sources */,
 				11DFBD5928CDF97B001EAAEE /* EnglandTableViewCell.swift in Sources */,
 				11DFBD5D28CDFE3D001EAAEE /* DetailedEnglandViewController.swift in Sources */,
 				11DFBD5728CDF845001EAAEE /* EnglandViewController.swift in Sources */,
 				11DFBD5428CD2CC8001EAAEE /* DetailedGermanyViewController.swift in Sources */,
+				11E391EA28CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift in Sources */,
+				11E391E628CE39D800E8395B /* GermanyPlayersViewController.swift in Sources */,
 				113BE57728CC8F180035FB5E /* MainViewController.swift in Sources */,
+				11E391F628CE549C00E8395B /* EnglandPlayersTableViewCell.swift in Sources */,
 				113BE57328CC8F180035FB5E /* AppDelegate.swift in Sources */,
 				113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */,
 				113BE57528CC8F180035FB5E /* SceneDelegate.swift in Sources */,
+				11E391E828CE39F200E8395B /* GermanyPlayersTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
