@@ -21,6 +21,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="England"/>
+                                <connections>
+                                    <segue destination="CB1-E7-kd1" kind="show" id="4Jb-cy-ebt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a country:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REg-tR-wIz">
                                 <rect key="frame" x="56" y="221" width="278" height="98"/>
@@ -48,77 +51,84 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="7Nh-Yw-jYX">
+        <!--England View Controller-->
+        <scene sceneID="kqy-WJ-Sl8">
             <objects>
-                <tableViewController id="Ety-aW-Lt2" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="34P-4Z-Cot">
+                <viewController id="CB1-E7-kd1" customClass="EnglandViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d2R-GM-hgO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="39u-lp-ieC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnglandTableViewCell" rowHeight="148" id="dcq-5a-8J3" customClass="EnglandTableViewCell" customModule="FootballApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="148"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dcq-5a-8J3" id="faQ-Qj-sZK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-Iw-akA">
+                                                    <rect key="frame" x="20" y="20" width="374" height="117"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMG-X3-Nwq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="139" height="117"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="117" id="3Wz-s8-J4M"/>
+                                                                <constraint firstAttribute="width" constant="139" id="6gy-aL-20X"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghZ-2j-qIB">
+                                                            <rect key="frame" x="162" y="0.0" width="212" height="117"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="212" id="2nv-Rn-QsA"/>
+                                                                <constraint firstAttribute="height" constant="117" id="fnn-Sy-Dil"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X3f-Iw-akA" firstAttribute="bottom" secondItem="faQ-Qj-sZK" secondAttribute="bottomMargin" id="7Dn-Fd-SJm"/>
+                                                <constraint firstItem="X3f-Iw-akA" firstAttribute="leading" secondItem="faQ-Qj-sZK" secondAttribute="leadingMargin" id="OCk-K1-Jws"/>
+                                                <constraint firstItem="X3f-Iw-akA" firstAttribute="trailing" secondItem="faQ-Qj-sZK" secondAttribute="trailingMargin" id="UfV-7k-zqz"/>
+                                                <constraint firstItem="X3f-Iw-akA" firstAttribute="top" secondItem="faQ-Qj-sZK" secondAttribute="topMargin" constant="9" id="hXr-HL-Jcf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="englandTeamImg" destination="KMG-X3-Nwq" id="c2G-cV-hXt"/>
+                                            <outlet property="englandTeamLbl" destination="ghZ-2j-qIB" id="I4W-sG-saN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CB1-E7-kd1" id="kNv-Jk-EdC"/>
+                                    <outlet property="delegate" destination="CB1-E7-kd1" id="T4J-ea-jQP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y9z-O3-PY1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zTl-Fj-gGm">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zTl-Fj-gGm" id="JVx-Vf-FIG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="4xP-Fp-i4S">
-                                <rect key="frame" x="0.0" y="88" width="414" height="130"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4xP-Fp-i4S" id="B8I-tW-CPw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ety-aW-Lt2" id="3hM-GD-Scd"/>
-                            <outlet property="delegate" destination="Ety-aW-Lt2" id="X9r-P1-Od0"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t5c-Qu-XSD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="39u-lp-ieC" firstAttribute="leading" secondItem="y9z-O3-PY1" secondAttribute="leading" id="AJe-9J-uH1"/>
+                            <constraint firstItem="y9z-O3-PY1" firstAttribute="bottom" secondItem="39u-lp-ieC" secondAttribute="bottom" id="jcr-a9-8Sl"/>
+                            <constraint firstItem="39u-lp-ieC" firstAttribute="top" secondItem="y9z-O3-PY1" secondAttribute="top" id="rI7-pq-Q1c"/>
+                            <constraint firstItem="y9z-O3-PY1" firstAttribute="trailing" secondItem="39u-lp-ieC" secondAttribute="trailing" id="rId-RD-fYp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8KG-24-3Xh"/>
+                    <connections>
+                        <outlet property="englandTableView" destination="39u-lp-ieC" id="PVs-fa-19O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTu-OO-CNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="98"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="fiv-R9-QMY">
-            <objects>
-                <tableViewController id="pq5-g8-LtS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qy0-iG-IMn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nwz-zs-CYI">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nwz-zs-CYI" id="Gkc-rv-5HK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="YqD-tD-pyZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="130"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YqD-tD-pyZ" id="yNE-5J-9Pc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="pq5-g8-LtS" id="Xj5-vW-6Kx"/>
-                            <outlet property="delegate" destination="pq5-g8-LtS" id="TnK-lc-PgT"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jHm-zr-l3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2100" y="944"/>
+            <point key="canvasLocation" x="2100" y="110"/>
         </scene>
         <!--Germany View Controller-->
         <scene sceneID="eZX-S1-cFx">
@@ -195,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="2100" y="-688"/>
         </scene>
-        <!--Detailed Germany View Controller-->
+        <!--Detailed England View Controller-->
         <scene sceneID="i8v-Lq-ZM2">
             <objects>
-                <viewController storyboardIdentifier="DetailedGermanyViewController" id="ON6-1N-8lO" customClass="DetailedGermanyViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedEnglandViewController" id="ON6-1N-8lO" customClass="DetailedEnglandViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zkT-57-0dZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,14 +260,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detailedGermanyImg" destination="kym-Qe-R1R" id="NTy-nL-oUt"/>
-                        <outlet property="detailedGermanyName" destination="ihT-bg-sxG" id="oug-uQ-ygs"/>
+                        <outlet property="detailedEnglandImg" destination="kym-Qe-R1R" id="L9e-Rq-2IK"/>
+                        <outlet property="detailedEnglandName" destination="ihT-bg-sxG" id="V8d-g2-XDs"/>
                         <outlet property="detailsShareButton" destination="Nhk-Md-2ed" id="5pt-b9-5rT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YiV-lU-7HE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3053.6231884057975" y="-843.08035714285711"/>
+            <point key="canvasLocation" x="3090" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j1O-t3-Gmb">
@@ -276,6 +286,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5d-Y3-Z9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Detailed Germany View Controller-->
+        <scene sceneID="rPw-zT-GFE">
+            <objects>
+                <viewController storyboardIdentifier="DetailedGermanyViewController" id="gRH-I5-OrQ" customClass="DetailedGermanyViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfd-y2-2AZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="X2f-eb-ilc">
+                                <rect key="frame" x="69" y="269.5" width="276" height="367"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M7h-lV-xvX">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="NA5-GK-FVj"/>
+                                            <constraint firstAttribute="width" constant="276" id="smp-tG-kqW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n74-YV-HQR">
+                                        <rect key="frame" x="0.0" y="283" width="276" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="VPJ-MN-hCE"/>
+                                            <constraint firstAttribute="height" constant="84" id="nfm-Do-xQ7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beq-cM-cip">
+                                <rect key="frame" x="115" y="751" width="192" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="GPU-bb-yEn"/>
+                                    <constraint firstAttribute="width" constant="192" id="rgF-K4-nl1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="gRH-I5-OrQ" eventType="touchUpInside" id="Wv6-8H-I8c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qhd-ID-7hm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X2f-eb-ilc" firstAttribute="centerX" secondItem="Qhd-ID-7hm" secondAttribute="centerX" id="2FG-1y-upq"/>
+                            <constraint firstItem="X2f-eb-ilc" firstAttribute="centerY" secondItem="Qhd-ID-7hm" secondAttribute="centerY" id="3vV-yY-e36"/>
+                            <constraint firstItem="Qhd-ID-7hm" firstAttribute="trailing" secondItem="beq-cM-cip" secondAttribute="trailing" constant="107" id="J6u-hS-M3K"/>
+                            <constraint firstItem="beq-cM-cip" firstAttribute="top" secondItem="X2f-eb-ilc" secondAttribute="bottom" constant="114.5" id="NUf-Gn-agQ"/>
+                            <constraint firstItem="beq-cM-cip" firstAttribute="leading" secondItem="Qhd-ID-7hm" secondAttribute="leading" constant="115" id="ci1-7l-Nwg"/>
+                            <constraint firstItem="Qhd-ID-7hm" firstAttribute="bottom" secondItem="beq-cM-cip" secondAttribute="bottom" constant="46" id="hEb-ks-Bea"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailedGermanyImg" destination="M7h-lV-xvX" id="fRE-rP-puc"/>
+                        <outlet property="detailedGermanyName" destination="n74-YV-HQR" id="hKA-XR-OEV"/>
+                        <outlet property="detailsShareButton" destination="beq-cM-cip" id="Ngi-Ht-o6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62H-pc-IOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3091" y="-688"/>
         </scene>
     </scenes>
     <resources>

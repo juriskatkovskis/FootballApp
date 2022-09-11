@@ -10,14 +10,14 @@ import UIKit
 class GermanyViewController: UIViewController {
     
     
-    var germanyTeam: [Datum] = []
+    var Teams: [Datum] = []
    
     @IBOutlet var germanyTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GermanyNetworkManager.fetchData { germanyTeam in
-            self.germanyTeam = germanyTeam
+            self.Teams = germanyTeam
             DispatchQueue.main.async {
             self.germanyTableView.reloadData()
             }
@@ -28,12 +28,12 @@ class GermanyViewController: UIViewController {
 }
 extension GermanyViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        germanyTeam.count
+        Teams.count
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedGermanyViewController") as? DetailedGermanyViewController{
-            let item = germanyTeam[indexPath.row]
-                    vc.item = item
+            let item = Teams[indexPath.row]
+                    vc.germanyItem = item
            // vc.img = UIImage(named: logo.indexPath.row)
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -46,7 +46,7 @@ extension GermanyViewController: UITableViewDelegate, UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GermanyTableViewCell", for: indexPath) as? GermanyTableViewCell else {return UITableViewCell()}
         
         
-        let item = germanyTeam[indexPath.row]
+        let item = Teams[indexPath.row]
         cell.germanyTeamLbl.text = item.name
       cell.germanyTeamImg.sd_setImage(with: URL(string: item.logo ?? ""))
         

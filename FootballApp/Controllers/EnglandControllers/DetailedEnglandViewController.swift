@@ -1,28 +1,29 @@
 //
-//  DetailedGermanyViewController.swift
+//  DetailedEnglandViewController.swift
 //  FootballApp
 //
-//  Created by juris.katkovskis on 10/09/2022.
+//  Created by juris.katkovskis on 11/09/2022.
 //
 
 import UIKit
 
-class DetailedGermanyViewController: UIViewController {
+class DetailedEnglandViewController: UIViewController {
 
-    @IBOutlet weak var detailedGermanyImg: UIImageView!
-    @IBOutlet weak var detailedGermanyName: UILabel!
-   
-    @IBOutlet weak var detailsShareButton: UIButton!
+    @IBOutlet weak var detailedEnglandImg: UIImageView!
+ 
+    @IBOutlet weak var detailedEnglandName: UILabel!
     
-    var item: Datum?
+@IBOutlet weak var detailsShareButton: UIButton!
+    
+    var englandItem: Datum?
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-                detailedGermanyName.text = item?.name
-                detailedGermanyImg.sd_setImage(with: URL(string: item?.logo ?? ""))
+                detailedEnglandName.text = englandItem?.name
+                detailedEnglandImg.sd_setImage(with: URL(string: englandItem?.logo ?? ""))
        
     }
     @IBAction func shareButtonPressed(_ sender: Any) {

@@ -5,7 +5,7 @@
 //  Created by juris.katkovskis on 10/09/2022.
 //
 
-import Foundation
+
 
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
@@ -15,8 +15,8 @@ import Foundation
 
 import Foundation
 
-// MARK: - GermanyTeams
-struct GermanyTeams: Codable {
+// MARK: - Teams
+struct Teams: Codable {
     let query: Query?
     let data: [Datum]?
 }
@@ -59,10 +59,12 @@ enum Continent: String, Codable {
 
 enum CountryCode: String, Codable {
     case de = "de"
+    case en = "en" //added
 }
 
 enum Name: String, Codable {
     case germany = "Germany"
+    case england = "England"
 }
 
 // MARK: - Query

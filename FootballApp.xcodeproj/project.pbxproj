@@ -15,12 +15,15 @@
 		113BE57F28CC8F1A0035FB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113BE57E28CC8F1A0035FB5E /* Assets.xcassets */; };
 		113BE58228CC8F1A0035FB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113BE58028CC8F1A0035FB5E /* LaunchScreen.storyboard */; };
 		113BE59128CC96090035FB5E /* GermanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */; };
-		113BE59328CC979F0035FB5E /* GermanyTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59228CC979F0035FB5E /* GermanyTeams.swift */; };
+		113BE59328CC979F0035FB5E /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59228CC979F0035FB5E /* Teams.swift */; };
 		113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */; };
 		113BE59828CC9D0C0035FB5E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 113BE59728CC9D0C0035FB5E /* SDWebImage */; };
-		113BE59A28CCA7E10035FB5E /* EnglandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */; };
 		113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */; };
 		11DFBD5428CD2CC8001EAAEE /* DetailedGermanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */; };
+		11DFBD5728CDF845001EAAEE /* EnglandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */; };
+		11DFBD5928CDF97B001EAAEE /* EnglandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */; };
+		11DFBD5B28CDFAD9001EAAEE /* EnglandNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */; };
+		11DFBD5D28CDFE3D001EAAEE /* DetailedEnglandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,11 +37,14 @@
 		113BE58128CC8F1A0035FB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113BE58328CC8F1A0035FB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyTableViewCell.swift; sourceTree = "<group>"; };
-		113BE59228CC979F0035FB5E /* GermanyTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyTeams.swift; sourceTree = "<group>"; };
+		113BE59228CC979F0035FB5E /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyNetworkManager.swift; sourceTree = "<group>"; };
-		113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandTableViewController.swift; sourceTree = "<group>"; };
 		113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyViewController.swift; sourceTree = "<group>"; };
 		11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedGermanyViewController.swift; sourceTree = "<group>"; };
+		11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandViewController.swift; sourceTree = "<group>"; };
+		11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandTableViewCell.swift; sourceTree = "<group>"; };
+		11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandNetworkManager.swift; sourceTree = "<group>"; };
+		11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedEnglandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				113BE57628CC8F180035FB5E /* MainViewController.swift */,
-				11DFBD5228CD2CA4001EAAEE /* New Group */,
-				113BE59928CCA7E10035FB5E /* EnglandTableViewController.swift */,
+				11DFBD5528CDF81D001EAAEE /* EnglandControllers */,
+				11DFBD5228CD2CA4001EAAEE /* GermanyControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,7 +121,7 @@
 		113BE58C28CC8F7C0035FB5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				113BE59228CC979F0035FB5E /* GermanyTeams.swift */,
+				113BE59228CC979F0035FB5E /* Teams.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,18 +130,29 @@
 			isa = PBXGroup;
 			children = (
 				113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */,
+				11DFBD5A28CDFAD9001EAAEE /* EnglandNetworkManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		11DFBD5228CD2CA4001EAAEE /* New Group */ = {
+		11DFBD5228CD2CA4001EAAEE /* GermanyControllers */ = {
 			isa = PBXGroup;
 			children = (
-				113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */,
 				113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */,
+				113BE59028CC96090035FB5E /* GermanyTableViewCell.swift */,
 				11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */,
 			);
-			path = "New Group";
+			path = GermanyControllers;
+			sourceTree = "<group>";
+		};
+		11DFBD5528CDF81D001EAAEE /* EnglandControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */,
+				11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */,
+				11DFBD5C28CDFE3C001EAAEE /* DetailedEnglandViewController.swift */,
+			);
+			path = EnglandControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,15 +232,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113BE59328CC979F0035FB5E /* GermanyTeams.swift in Sources */,
+				113BE59328CC979F0035FB5E /* Teams.swift in Sources */,
 				113BE57D28CC8F180035FB5E /* FootballApp.xcdatamodeld in Sources */,
 				113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */,
 				113BE59128CC96090035FB5E /* GermanyTableViewCell.swift in Sources */,
+				11DFBD5B28CDFAD9001EAAEE /* EnglandNetworkManager.swift in Sources */,
+				11DFBD5928CDF97B001EAAEE /* EnglandTableViewCell.swift in Sources */,
+				11DFBD5D28CDFE3D001EAAEE /* DetailedEnglandViewController.swift in Sources */,
+				11DFBD5728CDF845001EAAEE /* EnglandViewController.swift in Sources */,
 				11DFBD5428CD2CC8001EAAEE /* DetailedGermanyViewController.swift in Sources */,
 				113BE57728CC8F180035FB5E /* MainViewController.swift in Sources */,
 				113BE57328CC8F180035FB5E /* AppDelegate.swift in Sources */,
 				113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */,
-				113BE59A28CCA7E10035FB5E /* EnglandTableViewController.swift in Sources */,
 				113BE57528CC8F180035FB5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
