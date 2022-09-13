@@ -10,6 +10,8 @@ import UIKit
 class GermanyPlayersViewController: UIViewController {
     
     var Players: [Datum] = []
+    
+    
 
 
     @IBOutlet weak var germanyPlayersTableView: UITableView!
@@ -53,6 +55,15 @@ extension GermanyPlayersViewController: UITableViewDelegate, UITableViewDataSour
         
         
         return cell
+    }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedPlayerViewController") as? DetailedPlayerViewController{
+                let item = Players[indexPath.row]
+                        vc.germanyItem = item
+            
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
 
         
     }
@@ -60,7 +71,7 @@ extension GermanyPlayersViewController: UITableViewDelegate, UITableViewDataSour
                                 section: Int) -> String? {
        return "Germany players 🇩🇪"
     }
-    }
+    
     
     
     

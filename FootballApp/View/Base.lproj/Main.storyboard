@@ -440,6 +440,40 @@
             </objects>
             <point key="canvasLocation" x="3383" y="-1226"/>
         </scene>
+        <!--Detailed Player View Controller-->
+        <scene sceneID="wNC-cM-Jhk">
+            <objects>
+                <viewController storyboardIdentifier="DetailedPlayerViewController" id="QnH-Mb-54b" customClass="DetailedPlayerViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oe8-X9-ETU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zja-PC-NJG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VDE-xy-tfL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zja-PC-NJG" firstAttribute="leading" secondItem="VDE-xy-tfL" secondAttribute="leading" id="WM5-50-ITn"/>
+                            <constraint firstItem="VDE-xy-tfL" firstAttribute="bottom" secondItem="zja-PC-NJG" secondAttribute="bottom" id="bYc-B6-4NG"/>
+                            <constraint firstItem="zja-PC-NJG" firstAttribute="top" secondItem="VDE-xy-tfL" secondAttribute="top" id="gQX-Cy-TjY"/>
+                            <constraint firstItem="VDE-xy-tfL" firstAttribute="trailing" secondItem="zja-PC-NJG" secondAttribute="trailing" id="gfG-6n-j6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="zja-PC-NJG" id="coe-WF-bDI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sum-7C-jgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4474" y="-1226"/>
+        </scene>
         <!--Detailed England View Controller-->
         <scene sceneID="i8v-Lq-ZM2">
             <objects>
@@ -756,6 +790,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iH1-XX-MJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3383" y="993"/>
+        </scene>
+        <!--Detailed Eng Players View Controller-->
+        <scene sceneID="Ddh-kc-xRR">
+            <objects>
+                <viewController storyboardIdentifier="DetailedEngPlayersViewController" id="z0j-iV-1oT" customClass="DetailedEngPlayersViewController" customModule="FootballApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OWt-JA-jD2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOY-a5-gA4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nr5-Ct-YPu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nr5-Ct-YPu" firstAttribute="trailing" secondItem="pOY-a5-gA4" secondAttribute="trailing" id="5CN-Nl-ak1"/>
+                            <constraint firstItem="Nr5-Ct-YPu" firstAttribute="bottom" secondItem="pOY-a5-gA4" secondAttribute="bottom" id="PTK-gZ-VNO"/>
+                            <constraint firstItem="pOY-a5-gA4" firstAttribute="top" secondItem="Nr5-Ct-YPu" secondAttribute="top" id="Uzn-pn-yzK"/>
+                            <constraint firstItem="pOY-a5-gA4" firstAttribute="leading" secondItem="Nr5-Ct-YPu" secondAttribute="leading" id="fAN-NY-Xhv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EngWebKit" destination="pOY-a5-gA4" id="a4f-84-et2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpX-51-r6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4477" y="989"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JBn-di-uMG">

@@ -29,9 +29,9 @@ struct Datum: Codable {
     var logo: String?
     var country: Country?
     var playerID: Int?
-        var firstname, lastname: String?
-        var birthday: String?
-        var age, weight, height: Int?
+    var firstname, lastname: String?
+    var birthday: String?
+    var age, weight, height: Int?
 
     enum CodingKeys: String, CodingKey {
         case teamID = "team_id"

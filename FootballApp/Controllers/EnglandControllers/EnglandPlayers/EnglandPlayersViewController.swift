@@ -61,6 +61,15 @@ extension EnglandPlayersViewController: UITableViewDelegate, UITableViewDataSour
                                 section: Int) -> String? {
        return "England players 🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedEngPlayersViewController") as? DetailedEngPlayersViewController{
+            let item = Players[indexPath.row]
+                    vc.germanyItem = item
+        
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
     /*
     // MARK: - Navigation

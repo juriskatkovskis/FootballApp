@@ -14,7 +14,7 @@ class GermanyViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet var germanyTableView: UITableView!
     
-    @IBOutlet weak var germanyTeamSearch: UISearchBar!
+  
     
     
     override func viewDidLoad() {

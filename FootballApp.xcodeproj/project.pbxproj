@@ -19,6 +19,8 @@
 		113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */; };
 		113BE59828CC9D0C0035FB5E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 113BE59728CC9D0C0035FB5E /* SDWebImage */; };
 		113BE59C28CCAAC10035FB5E /* GermanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */; };
+		114BD9AB28D12A7100E1FF25 /* DetailedPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BD9AA28D12A7100E1FF25 /* DetailedPlayerViewController.swift */; };
+		114BD9AD28D1465600E1FF25 /* DetailedEngPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BD9AC28D1465600E1FF25 /* DetailedEngPlayersViewController.swift */; };
 		11DFBD5428CD2CC8001EAAEE /* DetailedGermanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */; };
 		11DFBD5728CDF845001EAAEE /* EnglandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */; };
 		11DFBD5928CDF97B001EAAEE /* EnglandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */; };
@@ -46,6 +48,8 @@
 		113BE59228CC979F0035FB5E /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		113BE59428CC97B70035FB5E /* GermanyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyNetworkManager.swift; sourceTree = "<group>"; };
 		113BE59B28CCAAC10035FB5E /* GermanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GermanyViewController.swift; sourceTree = "<group>"; };
+		114BD9AA28D12A7100E1FF25 /* DetailedPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPlayerViewController.swift; sourceTree = "<group>"; };
+		114BD9AC28D1465600E1FF25 /* DetailedEngPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedEngPlayersViewController.swift; sourceTree = "<group>"; };
 		11DFBD5328CD2CC8001EAAEE /* DetailedGermanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedGermanyViewController.swift; sourceTree = "<group>"; };
 		11DFBD5628CDF845001EAAEE /* EnglandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandViewController.swift; sourceTree = "<group>"; };
 		11DFBD5828CDF97B001EAAEE /* EnglandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglandTableViewCell.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 		11E391F028CE541B00E8395B /* GermanyPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				114BD9AA28D12A7100E1FF25 /* DetailedPlayerViewController.swift */,
 				11E391E528CE39D800E8395B /* GermanyPlayersViewController.swift */,
 				11E391E728CE39F200E8395B /* GermanyPlayersTableViewCell.swift */,
 			);
@@ -201,6 +206,7 @@
 			children = (
 				11E391F328CE547E00E8395B /* EnglandPlayersViewController.swift */,
 				11E391F528CE549C00E8395B /* EnglandPlayersTableViewCell.swift */,
+				114BD9AC28D1465600E1FF25 /* DetailedEngPlayersViewController.swift */,
 			);
 			path = EnglandPlayers;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 				11DFBD5428CD2CC8001EAAEE /* DetailedGermanyViewController.swift in Sources */,
 				11E391EA28CE3B0A00E8395B /* GermanyPlayersNetworkManager.swift in Sources */,
 				11E391E628CE39D800E8395B /* GermanyPlayersViewController.swift in Sources */,
+				114BD9AB28D12A7100E1FF25 /* DetailedPlayerViewController.swift in Sources */,
 				113BE57728CC8F180035FB5E /* MainViewController.swift in Sources */,
 				11E391F628CE549C00E8395B /* EnglandPlayersTableViewCell.swift in Sources */,
+				114BD9AD28D1465600E1FF25 /* DetailedEngPlayersViewController.swift in Sources */,
 				113BE57328CC8F180035FB5E /* AppDelegate.swift in Sources */,
 				113BE59528CC97B70035FB5E /* GermanyNetworkManager.swift in Sources */,
 				113BE57528CC8F180035FB5E /* SceneDelegate.swift in Sources */,
