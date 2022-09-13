@@ -52,6 +52,8 @@ extension EnglandPlayersViewController: UITableViewDelegate, UITableViewDataSour
 
         
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 125.0;//Choose your custom row height
     }
     
     
@@ -67,4 +69,5 @@ extension EnglandPlayersViewController: UITableViewDelegate, UITableViewDataSour
     }
     */
 
-
+}
+ 

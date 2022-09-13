@@ -20,7 +20,7 @@ class EnglandPlayersTableViewCell: UITableViewCell {
     func setupUI(withDataFrom: (Datum)){
         englandPlayersLbl.text = "Name: " + withDataFrom.firstname!
         englandPlayersLastLbl.text = "Lastname: " + withDataFrom.lastname!
-       // germanyPlayersAge.String = "Age:" + withDataFrom.age!
+       
        
         
     }
