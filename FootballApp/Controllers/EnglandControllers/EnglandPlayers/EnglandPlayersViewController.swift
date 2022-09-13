@@ -53,11 +53,14 @@ extension EnglandPlayersViewController: UITableViewDelegate, UITableViewDataSour
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125.0;//Choose your custom row height
+        return 125.0;
     }
     
     
-    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "England players 🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    }
 
     /*
     // MARK: - Navigation
