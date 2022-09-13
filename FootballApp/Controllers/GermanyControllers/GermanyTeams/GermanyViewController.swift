@@ -7,12 +7,15 @@
 
 import UIKit
 
-class GermanyViewController: UIViewController {
+class GermanyViewController: UIViewController, UISearchBarDelegate {
     
     
     var Teams: [Datum] = []
-   
+
     @IBOutlet var germanyTableView: UITableView!
+    
+    @IBOutlet weak var germanyTeamSearch: UISearchBar!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,9 @@ class GermanyViewController: UIViewController {
             self.Teams = germanyTeam
             DispatchQueue.main.async {
             self.germanyTableView.reloadData()
+                
+           //     self.germanyTeamSearch.delegate = self
+           //     self.filteredData = Teams
             }
         }
     }
@@ -58,6 +64,15 @@ extension GermanyViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+ //   func germanyTeamSearch(germanyTeamSearch: UISearchBar, textDidChange searchText: String?) {
+        
+
+        }
+        
+        
     
-}
+    
+    
+    
+
 
