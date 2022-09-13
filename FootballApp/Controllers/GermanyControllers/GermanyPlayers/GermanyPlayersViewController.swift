@@ -56,6 +56,10 @@ extension GermanyPlayersViewController: UITableViewDelegate, UITableViewDataSour
 
         
     }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "Germany players 🇩🇪"
+    }
     }
     
     

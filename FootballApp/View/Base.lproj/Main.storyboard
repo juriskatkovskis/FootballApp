@@ -142,14 +142,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="39u-lp-ieC">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="dNS-3h-jmq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnglandTableViewCell" rowHeight="130" id="dcq-5a-8J3" customClass="EnglandTableViewCell" customModule="FootballApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="130"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dcq-5a-8J3" id="faQ-Qj-sZK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
@@ -228,14 +223,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="qWK-Vn-EMi">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GermanyViewCell" rowHeight="50" id="eMo-rt-HHf">
-                                <rect key="frame" x="0.0" y="88.5" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eMo-rt-HHf" id="aqA-z8-R2Y">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -243,7 +233,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GermanyTableViewCell" rowHeight="130" id="QaF-nd-5ZR" customClass="GermanyTableViewCell" customModule="FootballApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138.5" width="414" height="130"/>
+                                <rect key="frame" x="0.0" y="94.5" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QaF-nd-5ZR" id="Dey-ZG-m0R">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
@@ -297,7 +287,6 @@
                     <navigationItem key="navigationItem" title="England Teams" largeTitleDisplayMode="always" id="p7X-bw-hrR"/>
                     <connections>
                         <outlet property="germanyTableView" destination="rBB-sk-MbP" id="SXB-zn-UZ9"/>
-                        <outlet property="germanyTeamSearch" destination="qWK-Vn-EMi" id="CSb-Ip-QYB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epR-pS-tlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -315,14 +304,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-3R-FoF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="1eI-Tk-hr6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GermanyPlayersTableViewCell" rowHeight="140" id="KJv-Fc-Ljk" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KJv-Fc-Ljk" id="254-yL-DUi" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
@@ -644,14 +628,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-BK-nWT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="sMr-fr-clZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnglandPlayersTableViewCell" rowHeight="140" id="QXl-9C-2BN" customClass="EnglandPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QXl-9C-2BN" id="pWX-6N-icK" customClass="GermanyPlayersTableViewCell" customModule="FootballApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
